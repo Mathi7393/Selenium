@@ -36,7 +36,8 @@ public class PracticeRobotClassActiTime {
 		r.keyRelease(KeyEvent.VK_V);
 		r.keyPress(KeyEvent.VK_ENTER);
 		r.keyRelease(KeyEvent.VK_ENTER);
-		
+		System.out.println("Pass");
+		driver.quit();
 	}
 
 }
