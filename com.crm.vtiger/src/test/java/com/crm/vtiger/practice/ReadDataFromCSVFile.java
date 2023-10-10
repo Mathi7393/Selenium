@@ -1,7 +1,6 @@
 package com.crm.vtiger.practice;
 
 import java.io.FileReader;
-import java.sql.Driver;
 import java.time.Duration;
 
 import org.openqa.selenium.By;

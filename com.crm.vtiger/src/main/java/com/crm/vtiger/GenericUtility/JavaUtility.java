@@ -22,7 +22,7 @@ public class JavaUtility {
 	 * which will not accept for file name
 	 * @return
 	 */
-	public String ModifiedDate() {
+	public String getModifiedDate() {
 		Date d=new Date();
 		String[] date = d.toString().split(" ");
 		String date1 = date[2];

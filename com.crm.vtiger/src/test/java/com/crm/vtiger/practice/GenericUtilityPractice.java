@@ -14,7 +14,7 @@ public class GenericUtilityPractice {
 		System.out.println(random);
 		String DateTime=JU.getSysDate();
 		System.out.println(DateTime);
-		String CurrentDate=JU.ModifiedDate();
+		String CurrentDate=JU.getModifiedDate();
 		System.out.println(CurrentDate);
 	}
 

@@ -12,6 +12,7 @@ import com.crm.vtiger.GenericUtility.ExcelFileUtility;
 import com.crm.vtiger.GenericUtility.JavaUtility;
 import com.crm.vtiger.GenericUtility.PropertyFileUtility;
 import com.crm.vtiger.GenericUtility.WebDriverUtility;
+import com.crm.vtiger.ObjectRepositary.LoginPage;
 
 public class CrateOrganisationTestByUsingUtilityFile {
 
@@ -41,9 +42,8 @@ public class CrateOrganisationTestByUsingUtilityFile {
 		wutil.maximizeWebPage(driver);
 		wutil.implicitWait(driver);
 		driver.get(URL);
-		driver.findElement(By.name("user_name")).sendKeys(UN);
-		driver.findElement(By.name("user_password")).sendKeys(PW);
-		driver.findElement(By.id("submitButton")).click();
+		LoginPage lp=new LoginPage(driver);
+		lp.login(UN, PW);
 		driver.findElement(By.linkText("Organizations")).click();
 		driver.findElement(By.xpath("//img[contains(@title,'Create')]")).click();
 		driver.findElement(By.xpath("//input[@name='accountname']")).sendKeys(com);
