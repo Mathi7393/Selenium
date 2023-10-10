@@ -5,24 +5,38 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import com.crm.vtiger.GenericUtility.ExcelFileUtility;
 import com.crm.vtiger.GenericUtility.JavaUtility;
 import com.crm.vtiger.GenericUtility.PropertyFileUtility;
+import com.crm.vtiger.GenericUtility.WebDriverUtility;
 
 public class CrateOrganisationContactTestByUsingUtilityFile {
 
 	public static void main(String[] args) throws Throwable {
 		WebDriver driver = null;
+		WebDriverUtility wutil = new WebDriverUtility();
 		PropertyFileUtility putil=new PropertyFileUtility();
+		ExcelFileUtility eutil = new ExcelFileUtility();
 		String UN = putil.getPropertyFileData("username");
 		String PW = putil.getPropertyFileData("password");
 		String URL = putil.getPropertyFileData("URL");		
+		String Browser = putil.getPropertyFileData("Browser");
 		JavaUtility JU=new JavaUtility();
-		String lastName = "Kundu" + JU.getRandom();
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		if (Browser.equalsIgnoreCase("Chrome")) {
+			driver = new ChromeDriver();
+		} else if (Browser.equalsIgnoreCase("edge")) {
+			driver = new EdgeDriver();
+		} else if (Browser.equalsIgnoreCase("firefox")) {
+			driver = new FirefoxDriver();
+		}
+		eutil.writeDataIntoExcel("Data", 0, 2, "mathi");
+		String lastName = eutil.getExcelFileData("Data", 0, 2) + JU.getRandom();
+		wutil.maximizeWebPage(driver);
+		wutil.implicitWait(driver);
 		driver.get(URL);
 		driver.findElement(By.name("user_name")).sendKeys(UN);
 		driver.findElement(By.name("user_password")).sendKeys(PW);

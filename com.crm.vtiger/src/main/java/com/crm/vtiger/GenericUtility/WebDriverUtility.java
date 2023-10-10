@@ -1,11 +1,9 @@
 package com.crm.vtiger.GenericUtility;
 
 import java.io.File;
-import java.io.IOException;
 import java.time.Duration;
 import java.util.NoSuchElementException;
 import java.util.Set;
-import java.util.logging.FileHandler;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

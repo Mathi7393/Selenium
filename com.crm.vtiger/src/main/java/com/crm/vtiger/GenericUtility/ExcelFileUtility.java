@@ -26,11 +26,12 @@ public class ExcelFileUtility {
 		wb.getSheet(sheetname).createRow(rownumber).createCell(cellNumber).setCellValue(Value);
 		FileOutputStream fos=new FileOutputStream(IpathConstant.excelFilePath);
 		wb.write(fos);
+		wb.close();
 	}
 	public String getExcelFileData(String sheetname, int rownumber, int cellNumber) throws Throwable {
 		FileInputStream fis = new FileInputStream(IpathConstant.excelFilePath);
 		Workbook wb=WorkbookFactory.create(fis);
-		String value = wb.getSheet(sheetname).createRow(rownumber).createCell(cellNumber).getStringCellValue();
+		String value = wb.getSheet(sheetname).getRow(rownumber).getCell(cellNumber).getStringCellValue();
 		return value;
 	}
 }
