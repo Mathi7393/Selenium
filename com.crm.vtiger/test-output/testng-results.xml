@@ -1,45 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Organisation Link Clicked]]>
+    </line>
+    <line>
+      <![CDATA[add Organisation Link Clicked]]>
+    </line>
+    <line>
+      <![CDATA[Organisation added]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-10-12T14:26:16 IST" name="Default suite" finished-at="2023-10-12T14:26:16 IST" duration-ms="67">
+  <suite started-at="2023-10-17T18:52:25 IST" name="Default suite" finished-at="2023-10-17T18:52:47 IST" duration-ms="22347">
     <groups>
     </groups>
-    <test started-at="2023-10-12T14:26:16 IST" name="Default test" finished-at="2023-10-12T14:26:16 IST" duration-ms="67">
-      <class name="com.crm.vtiger.practice.DataProviderPractice">
-        <test-method signature="create(java.lang.String,int)[pri:0, instance:com.crm.vtiger.practice.DataProviderPractice@298a5e20]" started-at="2023-10-12T14:26:16 IST" name="create" data-provider="dt" finished-at="2023-10-12T14:26:16 IST" duration-ms="7" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Samsung]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[15000]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-10-17T18:52:25 IST" name="Default test" finished-at="2023-10-17T18:52:47 IST" duration-ms="22347">
+      <class name="com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG">
+        <test-method is-config="true" signature="bs_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@17f9d882]" started-at="2023-10-17T18:52:25 IST" name="bs_config" finished-at="2023-10-17T18:52:25 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- create -->
-        <test-method signature="create(java.lang.String,int)[pri:0, instance:com.crm.vtiger.practice.DataProviderPractice@298a5e20]" started-at="2023-10-12T14:26:16 IST" name="create" data-provider="dt" finished-at="2023-10-12T14:26:16 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Nokia]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[20000]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- bs_config -->
+        <test-method is-config="true" signature="bc_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@17f9d882]" started-at="2023-10-17T18:52:25 IST" name="bc_config" finished-at="2023-10-17T18:52:30 IST" duration-ms="4755" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- create -->
-      </class> <!-- com.crm.vtiger.practice.DataProviderPractice -->
+        </test-method> <!-- bc_config -->
+        <test-method is-config="true" signature="bm_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@17f9d882]" started-at="2023-10-17T18:52:30 IST" name="bm_config" finished-at="2023-10-17T18:52:34 IST" duration-ms="4262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm_config -->
+        <test-method signature="verifyuserCreateOrganisation()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@17f9d882]" started-at="2023-10-17T18:52:34 IST" name="verifyuserCreateOrganisation" finished-at="2023-10-17T18:52:45 IST" duration-ms="11231" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Organisation Link Clicked]]>
+            </line>
+            <line>
+              <![CDATA[add Organisation Link Clicked]]>
+            </line>
+            <line>
+              <![CDATA[Organisation added]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyuserCreateOrganisation -->
+        <test-method is-config="true" signature="am_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@17f9d882]" started-at="2023-10-17T18:52:45 IST" name="am_config" finished-at="2023-10-17T18:52:47 IST" duration-ms="1674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am_config -->
+        <test-method is-config="true" signature="ac_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@17f9d882]" started-at="2023-10-17T18:52:47 IST" name="ac_config" finished-at="2023-10-17T18:52:47 IST" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ac_config -->
+        <test-method is-config="true" signature="as_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@17f9d882]" started-at="2023-10-17T18:52:47 IST" name="as_config" finished-at="2023-10-17T18:52:47 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- as_config -->
+      </class> <!-- com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

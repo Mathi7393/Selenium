@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="com.crm.vtiger.ParallelExecution.CrateMultipleOrgTest">
+        <methods>
+          <include name="ac_config"/>
+          <include name="regional"/>
+          <include name="am_config"/>
+          <include name="bs_config"/>
+          <include name="as_config"/>
+          <include name="bm_config"/>
+          <include name="verifyUserCreateMultipleOrganisationTest"/>
+          <include name="bc_config"/>
+        </methods>
+      </class> <!-- com.crm.vtiger.ParallelExecution.CrateMultipleOrgTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

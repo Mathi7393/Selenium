@@ -20,6 +20,7 @@ public class BaseClass {
 	public JavaUtility jutil = new JavaUtility();
 	public WebDriverUtility wutil = new WebDriverUtility();
 	public WebDriver driver;
+	public static WebDriver sdriver;//only for listner
 
 	@BeforeSuite
 	public void bs_config() {
@@ -40,6 +41,7 @@ public class BaseClass {
 		} else {
 			System.out.println("Invalid Browser");
 		}
+		sdriver=driver;//Initializing driver value to sdriver for listner
 		wutil.maximizeWebPage(driver);
 		wutil.implicitWait(driver);
 		driver.get(URL);

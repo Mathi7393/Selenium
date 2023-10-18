@@ -29,8 +29,10 @@ public class CrateOrganisationContactTestByUsingPOM {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(URL);
+		
 		LoginPage lp=new LoginPage(driver);
 		lp.login(UN, PW);
+		
 		HomePage hp= new HomePage(driver);
 		hp.clickContact();
 		ContactsPage conp=new ContactsPage(driver);

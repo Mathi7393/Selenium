@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CreateOrganizationPage {
-	@FindBy(xpath = "//input[@name='accountname']")
+	@FindBy(name="accountname")
 	private WebElement orgNameTextFiled;
 	
 	@FindBy(xpath = "//input[@title='Save [Alt+S]']")

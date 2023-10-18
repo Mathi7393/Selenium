@@ -2,8 +2,12 @@ package com.crm.vtiger.GenericUtility;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.testng.annotations.DataProvider;
 
 /**
  * This class consist of generic method to fetch data from Excel File
@@ -33,5 +37,22 @@ public class ExcelFileUtility {
 		Workbook wb=WorkbookFactory.create(fis);
 		String value = wb.getSheet(sheetname).getRow(rownumber).getCell(cellNumber).getStringCellValue();
 		return value;
+	}
+	
+	@DataProvider
+	public Object[][] getMultipleRowData() throws Throwable{
+		FileInputStream fis = new FileInputStream(IpathConstant.excelFilePath);
+		Sheet sh = WorkbookFactory.create(fis).getSheet("DataProvider");
+		int lastrow = sh.getLastRowNum()+1;
+		int lastcell = sh.getRow(0).getLastCellNum();
+		Object data[][]=new Object[lastrow][lastcell];
+		DataFormatter df=new DataFormatter();
+		for (int i = 0; i < lastrow; i++) {
+			for (int j = 0; j < lastcell; j++) {
+				data[i][j]=df.formatCellValue(sh.getRow(i).getCell(j));
+			}
+			
+		}
+		return data;
 	}
 }
