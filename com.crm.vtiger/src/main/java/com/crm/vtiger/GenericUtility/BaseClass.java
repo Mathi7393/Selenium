@@ -1,5 +1,4 @@
 package com.crm.vtiger.GenericUtility;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -20,7 +19,7 @@ public class BaseClass {
 	public JavaUtility jutil = new JavaUtility();
 	public WebDriverUtility wutil = new WebDriverUtility();
 	public WebDriver driver;
-	public static WebDriver sdriver;//only for listner
+	public static WebDriver sdriver;// only for listner
 
 	@BeforeSuite
 	public void bs_config() {
@@ -41,7 +40,7 @@ public class BaseClass {
 		} else {
 			System.out.println("Invalid Browser");
 		}
-		sdriver=driver;//Initializing driver value to sdriver for listner
+		sdriver = driver;// Initializing driver value to sdriver for listner
 		wutil.maximizeWebPage(driver);
 		wutil.implicitWait(driver);
 		driver.get(URL);
@@ -51,21 +50,21 @@ public class BaseClass {
 	public void bm_config() throws Throwable {
 		String UN = putil.getPropertyFileData("username");
 		String PW = putil.getPropertyFileData("password");
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp = new LoginPage(driver);
 		lp.login(UN, PW);
 	}
-	
+
 	@AfterMethod
 	public void am_config() {
-		HomePage hp=new HomePage(driver);
+		HomePage hp = new HomePage(driver);
 		hp.logout(driver);
 	}
-	
+
 	@AfterClass
 	public void ac_config() {
 		driver.quit();
 	}
-	
+
 	@AfterSuite
 	public void as_config() {
 		System.out.println("Database Connection disattached Sucessfully");
