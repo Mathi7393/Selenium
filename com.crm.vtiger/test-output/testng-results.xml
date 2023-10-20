@@ -11,24 +11,24 @@
       <![CDATA[Organisation added]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-10-17T18:52:25 IST" name="Default suite" finished-at="2023-10-17T18:52:47 IST" duration-ms="22347">
+  <suite started-at="2023-10-18T17:42:07 IST" name="Default suite" finished-at="2023-10-18T17:42:27 IST" duration-ms="19749">
     <groups>
     </groups>
-    <test started-at="2023-10-17T18:52:25 IST" name="Default test" finished-at="2023-10-17T18:52:47 IST" duration-ms="22347">
+    <test started-at="2023-10-18T17:42:07 IST" name="Default test" finished-at="2023-10-18T17:42:27 IST" duration-ms="19749">
       <class name="com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG">
-        <test-method is-config="true" signature="bs_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@17f9d882]" started-at="2023-10-17T18:52:25 IST" name="bs_config" finished-at="2023-10-17T18:52:25 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="bs_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@d737b89]" started-at="2023-10-18T17:42:07 IST" name="bs_config" finished-at="2023-10-18T17:42:07 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bs_config -->
-        <test-method is-config="true" signature="bc_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@17f9d882]" started-at="2023-10-17T18:52:25 IST" name="bc_config" finished-at="2023-10-17T18:52:30 IST" duration-ms="4755" status="PASS">
+        <test-method is-config="true" signature="bc_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@d737b89]" started-at="2023-10-18T17:42:08 IST" name="bc_config" finished-at="2023-10-18T17:42:11 IST" duration-ms="3438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bc_config -->
-        <test-method is-config="true" signature="bm_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@17f9d882]" started-at="2023-10-17T18:52:30 IST" name="bm_config" finished-at="2023-10-17T18:52:34 IST" duration-ms="4262" status="PASS">
+        <test-method is-config="true" signature="bm_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@d737b89]" started-at="2023-10-18T17:42:11 IST" name="bm_config" finished-at="2023-10-18T17:42:14 IST" duration-ms="3199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bm_config -->
-        <test-method signature="verifyuserCreateOrganisation()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@17f9d882]" started-at="2023-10-17T18:52:34 IST" name="verifyuserCreateOrganisation" finished-at="2023-10-17T18:52:45 IST" duration-ms="11231" status="PASS">
+        <test-method signature="verifyuserCreateOrganisation()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@d737b89]" started-at="2023-10-18T17:42:14 IST" name="verifyuserCreateOrganisation" finished-at="2023-10-18T17:42:25 IST" duration-ms="10633" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Organisation Link Clicked]]>
@@ -41,15 +41,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyuserCreateOrganisation -->
-        <test-method is-config="true" signature="am_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@17f9d882]" started-at="2023-10-17T18:52:45 IST" name="am_config" finished-at="2023-10-17T18:52:47 IST" duration-ms="1674" status="PASS">
+        <test-method is-config="true" signature="am_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@d737b89]" started-at="2023-10-18T17:42:25 IST" name="am_config" finished-at="2023-10-18T17:42:27 IST" duration-ms="2002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- am_config -->
-        <test-method is-config="true" signature="ac_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@17f9d882]" started-at="2023-10-17T18:52:47 IST" name="ac_config" finished-at="2023-10-17T18:52:47 IST" duration-ms="355" status="PASS">
+        <test-method is-config="true" signature="ac_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@d737b89]" started-at="2023-10-18T17:42:27 IST" name="ac_config" finished-at="2023-10-18T17:42:27 IST" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ac_config -->
-        <test-method is-config="true" signature="as_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@17f9d882]" started-at="2023-10-17T18:52:47 IST" name="as_config" finished-at="2023-10-17T18:52:47 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="as_config()[pri:0, instance:com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG@d737b89]" started-at="2023-10-18T17:42:27 IST" name="as_config" finished-at="2023-10-18T17:42:27 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- as_config -->
