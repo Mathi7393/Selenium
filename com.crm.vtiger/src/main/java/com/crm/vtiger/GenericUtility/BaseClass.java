@@ -28,8 +28,8 @@ public class BaseClass {
 
 	@BeforeClass
 	public void bc_config() throws Throwable { 
-//		String Browser = putil.getPropertyFileData("Browser");
-		String Browser =System.getProperty("Browser");
+		String Browser = putil.getPropertyFileData("Browser");
+//		String Browser =System.getProperty("Browser");
 		String URL = putil.getPropertyFileData("URL");
 //		Runtime Polymorphism or Method overriding
 		if (Browser.equalsIgnoreCase("Chrome")) {
