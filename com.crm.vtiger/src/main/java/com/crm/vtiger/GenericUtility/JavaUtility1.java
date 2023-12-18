@@ -3,7 +3,7 @@ package com.crm.vtiger.GenericUtility;
 import java.util.Date;
 import java.util.Random;
 
-public class JavaUtility {
+public class JavaUtility1 {
 
 	public int getRandom() {
 		Random r = new Random();

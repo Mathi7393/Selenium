@@ -25,15 +25,15 @@ public class ExcelFileUtility {
 	 * @throws Throwable
 	 */
 	public void writeDataIntoExcel(String sheetname, int rownumber, int cellNumber, String Value) throws Throwable {
-		FileInputStream fis = new FileInputStream(IpathConstant.excelFilePath);
+		FileInputStream fis = new FileInputStream(IpathConstant1.excelFilePath);
 		Workbook wb=WorkbookFactory.create(fis);
 		wb.getSheet(sheetname).createRow(rownumber).createCell(cellNumber).setCellValue(Value);
-		FileOutputStream fos=new FileOutputStream(IpathConstant.excelFilePath);
+		FileOutputStream fos=new FileOutputStream(IpathConstant1.excelFilePath);
 		wb.write(fos);
 		wb.close();
 	}
 	public String getExcelFileData(String sheetname, int rownumber, int cellNumber) throws Throwable {
-		FileInputStream fis = new FileInputStream(IpathConstant.excelFilePath);
+		FileInputStream fis = new FileInputStream(IpathConstant1.excelFilePath);
 		Workbook wb=WorkbookFactory.create(fis);
 		String value = wb.getSheet(sheetname).getRow(rownumber).getCell(cellNumber).getStringCellValue();
 		return value;
@@ -41,7 +41,7 @@ public class ExcelFileUtility {
 	
 	@DataProvider
 	public Object[][] getMultipleRowData() throws Throwable{
-		FileInputStream fis = new FileInputStream(IpathConstant.excelFilePath);
+		FileInputStream fis = new FileInputStream(IpathConstant1.excelFilePath);
 		Sheet sh = WorkbookFactory.create(fis).getSheet("DataProvider");
 		int lastrow = sh.getLastRowNum()+1;
 		int lastcell = sh.getRow(0).getLastCellNum();

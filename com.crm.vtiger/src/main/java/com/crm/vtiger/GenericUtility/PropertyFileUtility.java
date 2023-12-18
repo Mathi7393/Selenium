@@ -18,7 +18,7 @@ public class PropertyFileUtility {
 	 * @throws Throwable
 	 */
 	public String getPropertyFileData(String key) throws Throwable {
-		FileInputStream fis = new FileInputStream(IpathConstant.propertyfilepath);
+		FileInputStream fis = new FileInputStream(IpathConstant1.propertyfilepath);
 		Properties p = new Properties();
 		p.load(fis);
 		String value = p.getProperty(key);

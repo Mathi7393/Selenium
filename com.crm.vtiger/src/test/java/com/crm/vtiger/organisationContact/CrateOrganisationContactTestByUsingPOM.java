@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-import com.crm.vtiger.GenericUtility.JavaUtility;
+import com.crm.vtiger.GenericUtility.JavaUtility1;
 import com.crm.vtiger.GenericUtility.PropertyFileUtility;
 import com.crm.vtiger.ObjectRepositary.ContactsPage;
 import com.crm.vtiger.ObjectRepositary.CreateNewContactPage;
@@ -23,7 +23,7 @@ public class CrateOrganisationContactTestByUsingPOM {
 		String UN = putil.getPropertyFileData("username");
 		String PW = putil.getPropertyFileData("password");
 		String URL = putil.getPropertyFileData("URL");		
-		JavaUtility JU=new JavaUtility();
+		JavaUtility1 JU=new JavaUtility1();
 		String lastName = "Kundu" + JU.getRandom();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();

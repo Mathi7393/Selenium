@@ -13,6 +13,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.google.common.io.Files;
 
 public class WebDriverUtility {
@@ -41,7 +42,7 @@ public class WebDriverUtility {
 	 * @param driver
 	 */
 	public void implicitWait(WebDriver driver) {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IpathConstant.implicitWaitDuration));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IpathConstant1.implicitWaitDuration));
 	}
 
 	/**
@@ -52,7 +53,7 @@ public class WebDriverUtility {
 	 * @param element
 	 */
 	public void visibleElement(WebDriver driver, WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IpathConstant.explicitwaitDuration));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IpathConstant1.explicitwaitDuration));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
@@ -64,7 +65,7 @@ public class WebDriverUtility {
 	 * @param element
 	 */
 	public void elementToBeClickable(WebDriver driver, WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IpathConstant.explicitwaitDuration));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IpathConstant1.explicitwaitDuration));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 
@@ -76,7 +77,7 @@ public class WebDriverUtility {
 	 * @param element
 	 */
 	public void alertIsPresent(WebDriver driver) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IpathConstant.explicitwaitDuration));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IpathConstant1.explicitwaitDuration));
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
 
@@ -87,7 +88,7 @@ public class WebDriverUtility {
 	 * @param title
 	 */
 	public void titlePresent(WebDriver driver, String title) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IpathConstant.explicitwaitDuration));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IpathConstant1.explicitwaitDuration));
 		wait.until(ExpectedConditions.titleContains(title));
 	}
 
@@ -98,7 +99,7 @@ public class WebDriverUtility {
 	 * @param url
 	 */
 	public void urlPresent(WebDriver driver, String url) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IpathConstant.explicitwaitDuration));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IpathConstant1.explicitwaitDuration));
 		wait.until(ExpectedConditions.urlContains(url));
 	}
 
@@ -108,7 +109,7 @@ public class WebDriverUtility {
 	 * @param driver
 	 */
 	public void ignoreException(WebDriver driver) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IpathConstant.explicitwaitDuration));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(IpathConstant1.explicitwaitDuration));
 		wait.ignoring(NoSuchElementException.class);
 	}
 
@@ -318,7 +319,7 @@ public class WebDriverUtility {
 	public String screenShotOfWebPage(WebDriver driver, String screenShotName) throws Throwable {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		JavaUtility jutil = new JavaUtility();
+		JavaUtility1 jutil = new JavaUtility1();
 		String currentdate = jutil.getModifiedDate();
 		File dest = new File("./ScreenShots/" + currentdate + screenShotName + ".png");
 		Files.copy(src, dest);
@@ -336,7 +337,7 @@ public class WebDriverUtility {
 	public String screenShotOfWebElement(WebDriver driver, String screenShotName) throws Throwable {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		JavaUtility jutil = new JavaUtility();
+		JavaUtility1 jutil = new JavaUtility1();
 		String currentdate = jutil.getModifiedDate();
 		File dest = new File("./ScreenShots/" + currentdate + screenShotName + ".png");
 		Files.copy(src, dest);

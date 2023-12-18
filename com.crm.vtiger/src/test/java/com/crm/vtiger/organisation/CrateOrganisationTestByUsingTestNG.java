@@ -19,6 +19,7 @@ public class CrateOrganisationTestByUsingTestNG extends BaseClass{
 		String com = eutil.getExcelFileData("Data", 1, 0) + jutil.getRandom();
 		
 		HomePage hp = new HomePage(driver);
+
 		hp.clickOrgLink();
 		Reporter.log("Organisation Link Clicked",true);
 		OrganizationsPage orgp = new OrganizationsPage(driver);// click on + image

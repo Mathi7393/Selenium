@@ -34,7 +34,7 @@ public class ListnerImplementation implements ITestListener {
 		test.log(Status.INFO, result.getThrowable());
 		System.out.println(methodName + "testScriptExecutionStatus Fail");
 		WebDriverUtility wutil = new WebDriverUtility();
-		JavaUtility jutil = new JavaUtility();
+		JavaUtility1 jutil = new JavaUtility1();
 		String screenShotName = methodName + jutil.getModifiedDate();
 		try {
 			String path = wutil.screenShotOfWebPage(BaseClass.sdriver, screenShotName);
@@ -59,7 +59,7 @@ public class ListnerImplementation implements ITestListener {
 
 		// System Configuration
 		ExtentSparkReporter htmlReports = new ExtentSparkReporter(
-				"./ExtentReports\\Report-" + new JavaUtility().getModifiedDate() + ".html");
+				"./ExtentReports\\Report-" + new JavaUtility1().getModifiedDate() + ".html");
 		htmlReports.config().setDocumentTitle("Execution Report");
 		htmlReports.config().setTheme(Theme.DARK);
 		htmlReports.config().setReportName("Vtiger Execution Report");

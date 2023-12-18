@@ -16,7 +16,7 @@ import com.crm.vtiger.ObjectRepositary.LoginPage;
 public class BaseClass {
 	public PropertyFileUtility putil = new PropertyFileUtility();
 	public ExcelFileUtility eutil = new ExcelFileUtility();
-	public JavaUtility jutil = new JavaUtility();
+	public JavaUtility1 jutil = new JavaUtility1();
 	public WebDriverUtility wutil = new WebDriverUtility();
 	public WebDriver driver;
 	public static WebDriver sdriver;// only for listner

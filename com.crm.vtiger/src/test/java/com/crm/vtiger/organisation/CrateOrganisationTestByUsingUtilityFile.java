@@ -6,7 +6,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.crm.vtiger.GenericUtility.ExcelFileUtility;
-import com.crm.vtiger.GenericUtility.JavaUtility;
+import com.crm.vtiger.GenericUtility.JavaUtility1;
 import com.crm.vtiger.GenericUtility.PropertyFileUtility;
 import com.crm.vtiger.GenericUtility.WebDriverUtility;
 import com.crm.vtiger.ObjectRepositary.CreateOrganizationPage;
@@ -26,7 +26,7 @@ public class CrateOrganisationTestByUsingUtilityFile {
 		String PW = putil.getPropertyFileData("password");
 		String URL = putil.getPropertyFileData("URL");
 		String Browser = putil.getPropertyFileData("Browser");
-		JavaUtility JU = new JavaUtility();
+		JavaUtility1 JU = new JavaUtility1();
 //		Runtime Polymorphism or Method overriding
 		if (Browser.equalsIgnoreCase("Chrome")) {
 			driver = new ChromeDriver();

@@ -1,6 +1,6 @@
 package com.crm.vtiger.practice;
 
-import com.crm.vtiger.GenericUtility.JavaUtility;
+import com.crm.vtiger.GenericUtility.JavaUtility1;
 import com.crm.vtiger.GenericUtility.PropertyFileUtility;
 
 public class GenericUtilityPractice {
@@ -9,7 +9,7 @@ public class GenericUtilityPractice {
 		PropertyFileUtility putil=new PropertyFileUtility();
 		String Browser = putil.getPropertyFileData("Browser");
 		System.out.println(Browser);
-		JavaUtility JU=new JavaUtility();
+		JavaUtility1 JU=new JavaUtility1();
 		int random=JU.getRandom();
 		System.out.println(random);
 		String DateTime=JU.getSysDate();
