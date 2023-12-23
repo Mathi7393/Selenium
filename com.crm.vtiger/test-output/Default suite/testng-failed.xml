@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.vtiger.practice.HandleAutoSuggestion">
+      <class name="com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG">
         <methods>
-          <include name="clickAutoSugest"/>
+          <include name="bs_config"/>
+          <include name="as_config"/>
+          <include name="bm_config"/>
+          <include name="am_config"/>
+          <include name="verifyuserCreateOrganisation"/>
+          <include name="ac_config"/>
+          <include name="bc_config"/>
         </methods>
-      </class> <!-- com.crm.vtiger.practice.HandleAutoSuggestion -->
+      </class> <!-- com.crm.vtiger.organisation.CrateOrganisationTestByUsingTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

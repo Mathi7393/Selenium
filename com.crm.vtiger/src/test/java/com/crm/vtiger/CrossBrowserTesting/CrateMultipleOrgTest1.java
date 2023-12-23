@@ -11,7 +11,7 @@ import com.crm.vtiger.ObjectRepositary.HomePage;
 import com.crm.vtiger.ObjectRepositary.OrganizationsPage;
 import com.crm.vtiger.ObjectRepositary.organisationInfoPage;
 @Listeners(com.crm.vtiger.GenericUtility.ListnerImplementation.class)
-public class CrateMultipleOrgTest extends BaseClassForParallelExecution{
+public class CrateMultipleOrgTest1 extends BaseClassForParallelExecution{
 	@Test(dataProvider = "getMultipleRowData",dataProviderClass = ExcelFileUtility.class)
 	public void verifyUserCreateMultipleOrganisationTest(String OrganizationName) {
 		String orgName=OrganizationName+jutil.getRandom();
